@@ -1,11 +1,8 @@
 from scapy.all import sniff, IP, TCP, UDP
 import time
 
-print("Website Traffic Sniffer Started")
-print("This will ONLY show packets when you browse websites")
-print("It ignores all background traffic\n")
-print("Waiting for you to browse a website...")
-print("Open Chrome/Firefox and visit any website")
+print("Network Traffic Sniffer Started")
+
 print("-" * 60)
 
 
@@ -78,4 +75,5 @@ except KeyboardInterrupt:
     
 except Exception as error:
     print(f"Error: {error}")
+
     print("Make sure you run as Administrator!")
